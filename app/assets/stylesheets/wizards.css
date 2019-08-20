@@ -1,0 +1,33 @@
+.wizard-steps,
+.header {
+}
+
+.header, a:visited {
+  background-color: #63a0dd;
+  color: white;
+  padding: 29px;
+}
+
+.wizard-steps a,
+.header {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.wizard-steps {
+  background-color: #eaeaea;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wizard-steps a:visited {
+  color: #acacac;
+}
+
+.wizard-steps a .active, .wizard-steps a.active:visited {
+  color: black;
+}

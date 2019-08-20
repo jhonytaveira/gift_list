@@ -1,0 +1,44 @@
+/*
+ *= require 'reset'
+ *= require 'grid'
+ *= require 'wizards'
+ *= require 'description-list'
+ *= require 'menu-tree'
+ *= require 'paginate'
+ *= require 'product'
+ */
+
+footer {
+  height: 50px;
+}
+
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+
+body {
+  font-family: Roboto, Cantarell, Arial, sans-serif;
+}
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  clear: both;
+  *zoom: 1;
+}
