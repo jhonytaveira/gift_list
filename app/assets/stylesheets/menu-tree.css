@@ -1,0 +1,106 @@
+.menu-tree {
+  background-color: #63a0dd;
+  padding: 15px 0 15px 15px
+}
+
+.menu-tree li {
+  list-style: none;
+  padding: 10px 10px;
+  background: #63a0dd;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.menu-tree li:last-child {
+  border: 0;
+}
+
+.menu-tree a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: white;
+}
+
+.menu-tree .link:hover {
+  background-color: #6378dd;
+}
+
+li a {
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.menu-tree label {
+  position: relative;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.menu-tree input[type=checkbox] {
+  display: none;
+}
+
+li.collapse ul {
+  visibility: hidden;
+  opacity: 0;
+  max-height: 0;
+  transition: all 1s;
+}
+
+.menu-tree label::after {
+  content: "\25b6";
+  position: absolute;
+  top: 0;
+  margin-left: 10px;
+}
+
+li.collapse input:checked ~ ul {
+  visibility: hidden;
+  animation: 0.2s fadeIn;
+  animation-fill-mode: forwards;
+  opacity: 1;
+  max-height: 500px;
+}
+
+@keyframes fadeIn {
+  99% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+
+}
+
+li.collapse input:checked ~ label::after {
+  transform: rotate(90deg);
+}
+
+.collapse li a {
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 10px;
+  text-decoration: underline;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.mb-6 {
+  margin-bottom: 6px;
+}
+
+.p-10 {
+  padding: 10px 0;
+}
+
+.box-shadow-black {
+  box-shadow: 0 0 0.6px rgba(0, 0, 0, 1)
+}
